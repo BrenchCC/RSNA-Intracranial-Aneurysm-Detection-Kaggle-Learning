@@ -1,158 +1,122 @@
 # Docs Index
 
-`docs/` 目录按“认知建立 -> 方案设计 -> 实验结果 -> 深入研究”组织。下面不是简单列文件，而是给出每一份文档的基本指引，帮助你判断这份文档什么时候看、重点看什么、读完后能获得什么。
+`docs/` 已按长期维护的方式重构为 4 个编号目录：
 
-## 总体阅读建议
+- `01-overview/`：背景、当前方法、训练边界、研究笔记、摘要
+- `02-setup/`：复现与推理说明
+- `03-results/`：单模型与集成实验结论
+- `04-tricks/`：关键技巧拆解
 
-如果你是第一次进入本项目，建议按下面顺序：
+## 文档关系图
 
-1. 先读任务背景与整体方法。
-2. 再读分阶段实施方案与推理逻辑。
-3. 然后查看单模型与集成结果。
-4. 最后进入综合总结和深入研究文档。
+```mermaid
+flowchart TD
+    A[docs/README.md<br/>总入口]
+    B[01-overview/introduction.md<br/>任务背景]
+    C[01-overview/current-method.md<br/>当前方法]
+    D[01-overview/current-training.md<br/>训练边界]
+    E[01-overview/research-notes.md<br/>后续研究]
+    F[02-setup/*.md<br/>复现与推理]
+    G[03-results/*.md<br/>实验结果]
+    H[04-tricks/*.md<br/>技巧拆解]
 
-## `overview/`
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+    A --> G
+    A --> H
+    B --> C
+    C --> D
+    C --> F
+    D --> G
+    G --> E
 
-### [overview/introduction.md](overview/introduction.md)
+    click A "./README.md" "打开 docs 索引"
+    click B "./01-overview/introduction.md" "打开任务背景"
+    click C "./01-overview/current-method.md" "打开当前方法"
+    click D "./01-overview/current-training.md" "打开训练边界"
+    click E "./01-overview/research-notes.md" "打开后续研究"
+    click F "./02-setup/project-setup-cn.md" "打开复现说明"
+    click G "./03-results/model-database-cn.md" "打开实验结果"
+    click H "./04-tricks/README.md" "打开技巧总览"
+```
 
-基本指引：
+图中的节点可以直接点击跳转到对应文档。
 
-- 适合在项目最开始阅读。
-- 重点是建立对竞赛背景、医学问题、数据形式和任务定义的基础认知。
-- 如果你以后需要做汇报、面试介绍、项目开场说明，这份文档最有用。
-- 读完后，你应该能回答“这个比赛到底在做什么，为什么有意义，输入输出是什么”。
+## 建议阅读顺序
 
-### [overview/recording.md](overview/recording.md)
+### 第一次进入项目
 
-基本指引：
+1. [introduction.md](./01-overview/introduction.md)
+2. [guide.md](./01-overview/guide.md)
+3. [current-method.md](./01-overview/current-method.md)
+4. [current-training.md](./01-overview/current-training.md)
 
-- 适合在已经知道任务背景后阅读。
-- 重点是从论文式视角理解整体 pipeline，包括血管分割、ROI 提取、ROI 分类和最终聚合。
-- 这份文档更偏“方案结构化表达”，适合用来建立方法框架。
-- 读完后，你应该能清楚描述整个多阶段检测流程及每一阶段的作用。
+### 准备复现当前方案
 
-### [overview/training.md](overview/training.md)
+1. [current-method.md](./01-overview/current-method.md)
+2. [current-training.md](./01-overview/current-training.md)
+3. [project-setup-cn.md](./02-setup/project-setup-cn.md)
+4. [inference-setup-cn.md](./02-setup/inference-setup-cn.md)
 
-基本指引：
+### 准备看实验与下一步优化
 
-- 适合在读完 `recording.md` 之后继续看。
-- 重点是区分“哪些阶段真的训练了模型，哪些阶段只是规则计算”。
-- 如果你想快速理解项目训练成本、模型数量和训练边界，这份文档很关键。
-- 读完后，你应该能准确说明项目里真正训练的是哪些模型，以及 Stage 3 为什么不属于训练阶段。
+1. [model-database-cn.md](./03-results/model-database-cn.md)
+2. [ensemble-results-cn.md](./03-results/ensemble-results-cn.md)
+3. [research-notes.md](./01-overview/research-notes.md)
 
-### [overview/FirstSummary_CN.md](overview/FirstSummary_CN.md)
+## 目录说明
 
-基本指引：
+### `01-overview/`
 
-- 适合在前面几份 overview 文档之后阅读。
-- 重点是把项目整理成一套完整的中文战略蓝图，覆盖数据理解、预处理、分阶段建模和最终推理。
-- 这份文档适合作为“中文版总方案说明书”。
-- 读完后，你应该能从全局上理解为什么要做分割、定位、补丁分类三段式设计。
+- [introduction.md](./01-overview/introduction.md)
+  项目背景、任务定义、数据与评估方式。
 
-### [overview/FirstSummary.md](overview/FirstSummary.md)
+- [guide.md](./01-overview/guide.md)
+  `01-overview/` 子目录导航，说明每篇文档职责。
 
-基本指引：
+- [current-method.md](./01-overview/current-method.md)
+  当前采用的方法说明。
 
-- 内容和 `FirstSummary_CN.md` 基本对应，是英文版本。
-- 适合需要英文表达、对外沟通、写英文说明或做英文汇报时参考。
-- 如果中文版本已经读过，可以把它当作术语对照材料使用。
+- [current-training.md](./01-overview/current-training.md)
+  当前方法里哪些模块真的训练、哪些只是规则或聚合。
 
-### [overview/deep-insight.md](overview/deep-insight.md)
+- [research-notes.md](./01-overview/research-notes.md)
+  后续研究文档。
 
-基本指引：
+- [summary-cn.md](./01-overview/summary-cn.md)
+  中文摘要版总览。
 
-- 适合在完成基础复现理解之后再读。
-- 重点不再是“方案怎么搭”，而是“实验结果说明了什么规律”。
-- 这份文档会把模型表现、架构比较、训练策略和集成结论系统整理出来。
-- 读完后，你应该能说清楚本项目最重要的研究结论，例如为什么小模型更强、为什么 SE-ResNet 表现最好、为什么 5-6 个模型的集成最优。
+- [summary-en.md](./01-overview/summary-en.md)
+  英文摘要版总览。
 
-## `setup/`
+### `02-setup/`
 
-### [setup/ProjectSetup_CN.md](setup/ProjectSetup_CN.md)
+- [project-setup-cn.md](./02-setup/project-setup-cn.md)
+- [project-setup-en.md](./02-setup/project-setup-en.md)
+- [inference-setup-cn.md](./02-setup/inference-setup-cn.md)
+- [inference-setup-en.md](./02-setup/inference-setup-en.md)
 
-基本指引：
+这一组文档只负责“怎么落地当前方案”。
 
-- 适合在准备真正动手时阅读。
-- 重点是把理论方案拆成可执行的阶段任务，包括环境、EDA、可视化、分割、定位、补丁分类和最终提交。
-- 这份文档最像项目实施手册。
-- 读完后，你应该知道项目该按什么顺序落地，以及每个阶段该产出什么中间结果来做验证。
+### `03-results/`
 
-### [setup/ProjectSetup.md](setup/ProjectSetup.md)
+- [model-database-cn.md](./03-results/model-database-cn.md)
+- [model-database-en.md](./03-results/model-database-en.md)
+- [ensemble-results-cn.md](./03-results/ensemble-results-cn.md)
+- [ensemble-results-en.md](./03-results/ensemble-results-en.md)
 
-基本指引：
+这一组文档只负责“实验结论是什么”。
 
-- 与 `ProjectSetup_CN.md` 对应，是英文版本。
-- 适合做英文技术记录、术语对照，或者需要英文任务说明时使用。
-- 如果你的主要工作语言是中文，这份文档可以作为补充，而不是首读材料。
+### `04-tricks/`
 
-### [setup/InferenceSetup_CN.md](setup/InferenceSetup_CN.md)
+- [README.md](./04-tricks/README.md)
+- [segmentation-to-detection.md](./04-tricks/segmentation-to-detection.md)
+- [vessel-class-roi.md](./04-tricks/vessel-class-roi.md)
+- [distance-aware-negative-sampling.md](./04-tricks/distance-aware-negative-sampling.md)
+- [topk-mean-aggregation.md](./04-tricks/topk-mean-aggregation.md)
+- [input-2p5d.md](./04-tricks/input-2p5d.md)
 
-基本指引：
-
-- 适合在理解训练阶段后阅读。
-- 重点解释一个常见疑问：为什么最终只提交分类概率，却还要使用定位数据。
-- 它会从“大海捞针”问题出发，说明定位信号如何帮助分类模型聚焦候选区域。
-- 读完后，你应该能清楚解释定位数据在训练中的角色，以及它如何转化为最终推理流程。
-
-### [setup/InferenceSetup.md](setup/InferenceSetup.md)
-
-基本指引：
-
-- 与 `InferenceSetup_CN.md` 对应，是英文版本。
-- 适合用来做英文表达或作为中英文术语对照。
-- 如果你已经理解中文版本，这份文档更多是辅助材料。
-
-## `results/`
-
-### [results/MODEL_DATABASE_CN.md](results/MODEL_DATABASE_CN.md)
-
-基本指引：
-
-- 适合在完成训练后查看，或者做模型选型时查看。
-- 重点是单模型维度的对比，包括不同架构家族、超参数和训练策略的表现差异。
-- 如果你在问“下一轮应该优先训练哪个模型”，先看这份文档。
-- 读完后，你应该能提炼出单模型层面的结论，比如哪些结构值得继续投入，哪些路线应该停止。
-
-### [results/MODEL_DATABASE.md](results/MODEL_DATABASE.md)
-
-基本指引：
-
-- 与 `MODEL_DATABASE_CN.md` 对应，是英文版本。
-- 适合做英文总结、对外交流或保留英文实验档案。
-
-### [results/ENSEMBLE_RESULTS_CN.md](results/ENSEMBLE_RESULTS_CN.md)
-
-基本指引：
-
-- 适合在单模型结果已经稳定后阅读。
-- 重点是比较不同集成策略，包括模型数量、简单平均、加权平均、TTA 和多样性组合。
-- 如果你在问“最终上线或提交该用哪套集成”，这份文档最直接。
-- 读完后，你应该能判断哪些集成策略真正有效，哪些复杂设计并不值得。
-
-### [results/ENSEMBLE_RESULTS.md](results/ENSEMBLE_RESULTS.md)
-
-基本指引：
-
-- 与 `ENSEMBLE_RESULTS_CN.md` 对应，是英文版本。
-- 适合做英文实验记录、对照或对外展示。
-
-## 推荐阅读路径
-
-### 路线 1：快速理解项目
-
-1. [overview/introduction.md](overview/introduction.md)
-2. [overview/recording.md](overview/recording.md)
-3. [overview/training.md](overview/training.md)
-4. [setup/InferenceSetup_CN.md](setup/InferenceSetup_CN.md)
-
-### 路线 2：准备动手复现
-
-1. [overview/FirstSummary_CN.md](overview/FirstSummary_CN.md)
-2. [setup/ProjectSetup_CN.md](setup/ProjectSetup_CN.md)
-3. [setup/InferenceSetup_CN.md](setup/InferenceSetup_CN.md)
-
-### 路线 3：准备做实验决策
-
-1. [overview/deep-insight.md](overview/deep-insight.md)
-2. [results/MODEL_DATABASE_CN.md](results/MODEL_DATABASE_CN.md)
-3. [results/ENSEMBLE_RESULTS_CN.md](results/ENSEMBLE_RESULTS_CN.md)
+这一组文档只负责“方法细节拆解”，不重复承担背景和结果总结。
