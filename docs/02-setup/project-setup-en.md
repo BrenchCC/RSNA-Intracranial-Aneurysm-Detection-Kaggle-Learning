@@ -37,6 +37,44 @@ Finish these first:
 
 This phase exists to prevent every later experiment from being built on bad preprocessing.
 
+### Phase 0 preprocessing checks that matter most
+
+#### DICOM reconstruction
+
+- group slices by `SeriesInstanceUID`,
+- rebuild the volume using real slice order rather than filenames,
+- check missing slices, duplicates, or abnormal orientation.
+
+#### Spatial metadata preservation
+
+- keep `spacing` during NIfTI conversion,
+- preserve direction matrix and origin,
+- make sure coordinates, masks, and volumes share the same spatial reference.
+
+#### Intensity handling
+
+- `HU windowing [-100, 300]` is more useful for visualization,
+- training normalization should be designed separately from display windowing,
+- `z-score normalization` is usually more stable on valid regions than on full volumes with large air background.
+
+#### Coarse crop before ROI crop
+
+- first reduce the field of view to the brain or valid region,
+- then perform candidate-level `64^3` cropping,
+- do not collapse coarse crop and lesion-centered ROI extraction into a single unclear step.
+
+### Preprocessing Check Flow
+
+```mermaid
+flowchart TD
+    A[DICOM series] --> B[reconstruct 3D volume]
+    B --> C[preserve spacing / direction / origin]
+    C --> D[intensity handling]
+    D --> E[coarse crop of valid region]
+    E --> F[candidate ROI crop]
+    F --> G[feed training or inference]
+```
+
 ## Phase 1: Vessel-Related Module
 
 The goal here is to provide search-space reduction and anatomical priors.
