@@ -1,0 +1,29 @@
+{
+  "nii_path": "nii/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381.nii",
+  "shape_xyz": [
+    512,
+    512,
+    228
+  ],
+  "voxel_spacing": [
+    0.474609375,
+    0.474609375,
+    0.70001220703125
+  ],
+  "threshold_hu": {
+    "low": 120.0,
+    "high": 700.0
+  },
+  "vessel_voxels": 1287440,
+  "total_voxels": 59768832,
+  "vessel_ratio": 0.021540323893229168,
+  "outputs": {
+    "mask_npy": "nii/decoded/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381/vessel_view/vessel_mask.npy",
+    "coordinates_json": "nii/decoded/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381/vessel_view/vessel_coordinates.json",
+    "axial_overlay": "nii/decoded/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381/vessel_view/axial_vessel_overlay.png",
+    "coronal_overlay": "nii/decoded/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381/vessel_view/coronal_vessel_overlay.png",
+    "sagittal_overlay": "nii/decoded/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381/vessel_view/sagittal_vessel_overlay.png",
+    "axial_grid_overlay": "nii/decoded/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381/vessel_view/axial_vessel_overlay_grid.png",
+    "axial_mip_overlay": "nii/decoded/1.2.826.0.1.3680043.8.498.10035643165968342618460849823699311381/vessel_view/axial_mip_vessel_overlay.png"
+  }
+}
