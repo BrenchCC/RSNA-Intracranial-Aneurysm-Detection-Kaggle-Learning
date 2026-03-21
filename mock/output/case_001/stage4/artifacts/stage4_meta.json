@@ -1,0 +1,34 @@
+{
+  "stage": "stage4_aggregate",
+  "case_id": "case_001",
+  "input": {
+    "roi_scores_path": "mock/output/case_001/stage3/artifacts/roi_scores.json"
+  },
+  "output": {
+    "case_pred_path": "mock/output/case_001/stage4/artifacts/case_pred.json",
+    "submission_like_csv_path": "mock/output/case_001/stage4/artifacts/submission_like.csv"
+  },
+  "k_top": 5,
+  "aggregation_rule": {
+    "per_vessel": "top-k mean on fused_score grouped by vessel_class",
+    "aneurysm_present": "max over 13 location probabilities"
+  },
+  "trick_mapping": {
+    "trick4_topk_mean_aggregation": "Case-level vector derived from vessel-wise top-k mean."
+  },
+  "class_roi_counts": {
+    "L_ICA_INFRA": 1,
+    "R_ICA_INFRA": 3,
+    "L_ICA_SUPRA": 3,
+    "R_ICA_SUPRA": 6,
+    "L_MCA": 5,
+    "R_MCA": 13,
+    "A_COM": 6,
+    "L_ACA": 10,
+    "R_ACA": 0,
+    "L_PCOM": 7,
+    "R_PCOM": 3,
+    "BASILAR_TIP": 7,
+    "OTHER_POST": 0
+  }
+}

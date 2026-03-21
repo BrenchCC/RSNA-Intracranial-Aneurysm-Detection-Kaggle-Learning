@@ -1,0 +1,20 @@
+{
+  "case_id": "case_001",
+  "shape_zyx": [
+    64,
+    128,
+    128
+  ],
+  "spacing_zyx_mm": [
+    1.0,
+    0.6,
+    0.6
+  ],
+  "orientation": "RAS",
+  "origin_xyz_mm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "mock_note": "Synthetic volume for pipeline interface validation."
+}

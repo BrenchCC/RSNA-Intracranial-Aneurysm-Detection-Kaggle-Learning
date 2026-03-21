@@ -1,0 +1,773 @@
+{
+  "case_id": "case_001",
+  "candidates": [
+    {
+      "id": 36,
+      "center_xyz": [
+        52,
+        40,
+        77
+      ],
+      "vessel_class": "L_PCOM",
+      "prior_score": 1.0,
+      "dist_to_pseudo_lesion_mm": 24.92308167141455,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 55,
+      "center_xyz": [
+        41,
+        39,
+        78
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 1.0,
+      "dist_to_pseudo_lesion_mm": 20.074859899884732,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 188,
+      "center_xyz": [
+        32,
+        76,
+        59
+      ],
+      "vessel_class": "A_COM",
+      "prior_score": 1.0,
+      "dist_to_pseudo_lesion_mm": 18.23951753747889,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 26,
+      "center_xyz": [
+        38,
+        41,
+        76
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 1.0,
+      "dist_to_pseudo_lesion_mm": 17.13709426944953,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 136,
+      "center_xyz": [
+        34,
+        36,
+        72
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 1.0,
+      "dist_to_pseudo_lesion_mm": 13.74772708486752,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 98,
+      "center_xyz": [
+        49,
+        39,
+        80
+      ],
+      "vessel_class": "L_PCOM",
+      "prior_score": 0.9980691075325012,
+      "dist_to_pseudo_lesion_mm": 23.63556642012203,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 175,
+      "center_xyz": [
+        29,
+        74,
+        56
+      ],
+      "vessel_class": "A_COM",
+      "prior_score": 0.9971581101417542,
+      "dist_to_pseudo_lesion_mm": 18.11739495622922,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 124,
+      "center_xyz": [
+        7,
+        80,
+        69
+      ],
+      "vessel_class": "R_ICA_SUPRA",
+      "prior_score": 0.9911771416664124,
+      "dist_to_pseudo_lesion_mm": 31.618349103012953,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 15,
+      "center_xyz": [
+        29,
+        44,
+        72
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.9869278073310852,
+      "dist_to_pseudo_lesion_mm": 11.443775600735973,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 157,
+      "center_xyz": [
+        44,
+        81,
+        65
+      ],
+      "vessel_class": "BASILAR_TIP",
+      "prior_score": 0.9723440408706665,
+      "dist_to_pseudo_lesion_mm": 14.726846234004075,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 28,
+      "center_xyz": [
+        1,
+        78,
+        69
+      ],
+      "vessel_class": "R_ICA_SUPRA",
+      "prior_score": 0.9688279032707214,
+      "dist_to_pseudo_lesion_mm": 35.175559697039645,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 30,
+      "center_xyz": [
+        14,
+        85,
+        72
+      ],
+      "vessel_class": "R_ICA_SUPRA",
+      "prior_score": 0.9678102135658264,
+      "dist_to_pseudo_lesion_mm": 27.378093432523748,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 95,
+      "center_xyz": [
+        30,
+        85,
+        50
+      ],
+      "vessel_class": "A_COM",
+      "prior_score": 0.9646020531654358,
+      "dist_to_pseudo_lesion_mm": 24.74671695397189,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 143,
+      "center_xyz": [
+        27,
+        89,
+        55
+      ],
+      "vessel_class": "A_COM",
+      "prior_score": 0.9627323746681213,
+      "dist_to_pseudo_lesion_mm": 24.364728605096342,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 89,
+      "center_xyz": [
+        48,
+        74,
+        69
+      ],
+      "vessel_class": "BASILAR_TIP",
+      "prior_score": 0.958299458026886,
+      "dist_to_pseudo_lesion_mm": 14.058449416631978,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 85,
+      "center_xyz": [
+        30,
+        83,
+        87
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.9493600726127625,
+      "dist_to_pseudo_lesion_mm": 10.49571341072154,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 94,
+      "center_xyz": [
+        13,
+        89,
+        58
+      ],
+      "vessel_class": "L_ICA_SUPRA",
+      "prior_score": 0.9446113109588623,
+      "dist_to_pseudo_lesion_mm": 31.0322412983658,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 179,
+      "center_xyz": [
+        15,
+        42,
+        78
+      ],
+      "vessel_class": "R_ICA_INFRA",
+      "prior_score": 0.9410781264305115,
+      "dist_to_pseudo_lesion_mm": 19.885673234768795,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 118,
+      "center_xyz": [
+        40,
+        70,
+        60
+      ],
+      "vessel_class": "A_COM",
+      "prior_score": 0.9391869306564331,
+      "dist_to_pseudo_lesion_mm": 16.407315441594946,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 170,
+      "center_xyz": [
+        24,
+        45,
+        75
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.9350075125694275,
+      "dist_to_pseudo_lesion_mm": 13.805795884337853,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 182,
+      "center_xyz": [
+        23,
+        87,
+        65
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.9333906769752502,
+      "dist_to_pseudo_lesion_mm": 22.160324907365414,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 168,
+      "center_xyz": [
+        30,
+        55,
+        74
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.9291249513626099,
+      "dist_to_pseudo_lesion_mm": 14.36384349678038,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 40,
+      "center_xyz": [
+        26,
+        41,
+        78
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.9258950352668762,
+      "dist_to_pseudo_lesion_mm": 15.239422561238992,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 21,
+      "center_xyz": [
+        39,
+        89,
+        66
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.9252391457557678,
+      "dist_to_pseudo_lesion_mm": 15.484185480676729,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 57,
+      "center_xyz": [
+        40,
+        65,
+        75
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.9206722974777222,
+      "dist_to_pseudo_lesion_mm": 9.055385138137416,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 29,
+      "center_xyz": [
+        30,
+        70,
+        70
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.9193487763404846,
+      "dist_to_pseudo_lesion_mm": 13.813037319865606,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 25,
+      "center_xyz": [
+        41,
+        40,
+        79
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.9183396100997925,
+      "dist_to_pseudo_lesion_mm": 20.447982785595258,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 131,
+      "center_xyz": [
+        34,
+        80,
+        55
+      ],
+      "vessel_class": "A_COM",
+      "prior_score": 0.9133337140083313,
+      "dist_to_pseudo_lesion_mm": 20.164324932910596,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 106,
+      "center_xyz": [
+        63,
+        84,
+        55
+      ],
+      "vessel_class": "R_PCOM",
+      "prior_score": 0.9130992889404297,
+      "dist_to_pseudo_lesion_mm": 31.315172041679734,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 120,
+      "center_xyz": [
+        45,
+        72,
+        71
+      ],
+      "vessel_class": "BASILAR_TIP",
+      "prior_score": 0.9095790982246399,
+      "dist_to_pseudo_lesion_mm": 11.384199576606166,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 66,
+      "center_xyz": [
+        32,
+        50,
+        55
+      ],
+      "vessel_class": "L_MCA",
+      "prior_score": 0.9094002842903137,
+      "dist_to_pseudo_lesion_mm": 5.513619500836088,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 47,
+      "center_xyz": [
+        29,
+        43,
+        87
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.9073894619941711,
+      "dist_to_pseudo_lesion_mm": 20.43330614462574,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 33,
+      "center_xyz": [
+        35,
+        60,
+        74
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.9048997163772583,
+      "dist_to_pseudo_lesion_mm": 12.14084016862095,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 76,
+      "center_xyz": [
+        41,
+        53,
+        59
+      ],
+      "vessel_class": "L_MCA",
+      "prior_score": 0.9032813906669617,
+      "dist_to_pseudo_lesion_mm": 14.529969029560938,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 8,
+      "center_xyz": [
+        40,
+        64,
+        65
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.901570737361908,
+      "dist_to_pseudo_lesion_mm": 14.53409783921933,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 185,
+      "center_xyz": [
+        58,
+        85,
+        58
+      ],
+      "vessel_class": "R_PCOM",
+      "prior_score": 0.8926709890365601,
+      "dist_to_pseudo_lesion_mm": 26.59548833919016,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 34,
+      "center_xyz": [
+        46,
+        58,
+        72
+      ],
+      "vessel_class": "L_PCOM",
+      "prior_score": 0.8899055123329163,
+      "dist_to_pseudo_lesion_mm": 14.905032707109367,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 54,
+      "center_xyz": [
+        21,
+        76,
+        58
+      ],
+      "vessel_class": "L_ICA_SUPRA",
+      "prior_score": 0.8885100483894348,
+      "dist_to_pseudo_lesion_mm": 20.655265672462313,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 191,
+      "center_xyz": [
+        5,
+        77,
+        69
+      ],
+      "vessel_class": "R_ICA_SUPRA",
+      "prior_score": 0.8826490044593811,
+      "dist_to_pseudo_lesion_mm": 31.83080269173242,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 134,
+      "center_xyz": [
+        50,
+        41,
+        73
+      ],
+      "vessel_class": "L_PCOM",
+      "prior_score": 0.8821962475776672,
+      "dist_to_pseudo_lesion_mm": 24.15781447068422,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 6,
+      "center_xyz": [
+        54,
+        83,
+        66
+      ],
+      "vessel_class": "BASILAR_TIP",
+      "prior_score": 0.8790932297706604,
+      "dist_to_pseudo_lesion_mm": 20.32043306625132,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 138,
+      "center_xyz": [
+        59,
+        78,
+        88
+      ],
+      "vessel_class": "BASILAR_TIP",
+      "prior_score": 0.8788579702377319,
+      "dist_to_pseudo_lesion_mm": 20.15241920961352,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 151,
+      "center_xyz": [
+        39,
+        34,
+        84
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.8762111663818359,
+      "dist_to_pseudo_lesion_mm": 22.426769718352215,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 24,
+      "center_xyz": [
+        30,
+        44,
+        50
+      ],
+      "vessel_class": "L_MCA",
+      "prior_score": 0.8745959997177124,
+      "dist_to_pseudo_lesion_mm": 2.690724809414742,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 147,
+      "center_xyz": [
+        38,
+        49,
+        48
+      ],
+      "vessel_class": "L_MCA",
+      "prior_score": 0.8723076581954956,
+      "dist_to_pseudo_lesion_mm": 10.862780491200215,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 72,
+      "center_xyz": [
+        45,
+        33,
+        70
+      ],
+      "vessel_class": "L_PCOM",
+      "prior_score": 0.8696082830429077,
+      "dist_to_pseudo_lesion_mm": 20.894975472586705,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 126,
+      "center_xyz": [
+        18,
+        56,
+        58
+      ],
+      "vessel_class": "L_ICA_INFRA",
+      "prior_score": 0.8695401549339294,
+      "dist_to_pseudo_lesion_mm": 12.68227108999015,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 5,
+      "center_xyz": [
+        22,
+        42,
+        57
+      ],
+      "vessel_class": "L_MCA",
+      "prior_score": 0.8683056831359863,
+      "dist_to_pseudo_lesion_mm": 6.572670690061993,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 50,
+      "center_xyz": [
+        11,
+        69,
+        56
+      ],
+      "vessel_class": "L_ICA_SUPRA",
+      "prior_score": 0.8590100407600403,
+      "dist_to_pseudo_lesion_mm": 22.742910983425144,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 164,
+      "center_xyz": [
+        47,
+        97,
+        66
+      ],
+      "vessel_class": "BASILAR_TIP",
+      "prior_score": 0.8570297956466675,
+      "dist_to_pseudo_lesion_mm": 20.327321515635056,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 14,
+      "center_xyz": [
+        34,
+        99,
+        79
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.8569796085357666,
+      "dist_to_pseudo_lesion_mm": 16.523922052587878,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 0,
+      "center_xyz": [
+        29,
+        49,
+        79
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.8569444417953491,
+      "dist_to_pseudo_lesion_mm": 15.91728620085723,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 173,
+      "center_xyz": [
+        59,
+        39,
+        86
+      ],
+      "vessel_class": "L_PCOM",
+      "prior_score": 0.8549839854240417,
+      "dist_to_pseudo_lesion_mm": 29.006206232459977,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 176,
+      "center_xyz": [
+        10,
+        51,
+        74
+      ],
+      "vessel_class": "R_ICA_INFRA",
+      "prior_score": 0.8548963069915771,
+      "dist_to_pseudo_lesion_mm": 22.369622258768697,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 142,
+      "center_xyz": [
+        48,
+        73,
+        87
+      ],
+      "vessel_class": "BASILAR_TIP",
+      "prior_score": 0.85425865650177,
+      "dist_to_pseudo_lesion_mm": 9.019977827023745,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 111,
+      "center_xyz": [
+        22,
+        90,
+        72
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.8528256416320801,
+      "dist_to_pseudo_lesion_mm": 21.497906874856444,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 174,
+      "center_xyz": [
+        31,
+        91,
+        93
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.8527794480323792,
+      "dist_to_pseudo_lesion_mm": 13.45362404707371,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 152,
+      "center_xyz": [
+        34,
+        63,
+        86
+      ],
+      "vessel_class": "R_MCA",
+      "prior_score": 0.8518245816230774,
+      "dist_to_pseudo_lesion_mm": 8.301807032206904,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 108,
+      "center_xyz": [
+        13,
+        89,
+        70
+      ],
+      "vessel_class": "R_ICA_SUPRA",
+      "prior_score": 0.850023090839386,
+      "dist_to_pseudo_lesion_mm": 29.34348309250284,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 73,
+      "center_xyz": [
+        48,
+        72,
+        58
+      ],
+      "vessel_class": "R_PCOM",
+      "prior_score": 0.8478363156318665,
+      "dist_to_pseudo_lesion_mm": 19.62651268055535,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 20,
+      "center_xyz": [
+        44,
+        52,
+        73
+      ],
+      "vessel_class": "L_PCOM",
+      "prior_score": 0.8465139865875244,
+      "dist_to_pseudo_lesion_mm": 16.425589791541732,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 123,
+      "center_xyz": [
+        19,
+        60,
+        69
+      ],
+      "vessel_class": "R_ICA_INFRA",
+      "prior_score": 0.8464505076408386,
+      "dist_to_pseudo_lesion_mm": 16.288646352597873,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 60,
+      "center_xyz": [
+        19,
+        80,
+        82
+      ],
+      "vessel_class": "R_ICA_SUPRA",
+      "prior_score": 0.8460853099822998,
+      "dist_to_pseudo_lesion_mm": 20.54166497633529,
+      "keep_by_distance_rule": false
+    },
+    {
+      "id": 129,
+      "center_xyz": [
+        39,
+        65,
+        75
+      ],
+      "vessel_class": "L_ACA",
+      "prior_score": 0.8445143699645996,
+      "dist_to_pseudo_lesion_mm": 9.0,
+      "keep_by_distance_rule": false
+    }
+  ]
+}

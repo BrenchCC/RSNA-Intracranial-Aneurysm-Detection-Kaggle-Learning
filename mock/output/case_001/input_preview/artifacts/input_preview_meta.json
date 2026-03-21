@@ -1,0 +1,21 @@
+{
+  "case_id": "case_001",
+  "input_volume_path": "mock/input/case_001/volume.npy",
+  "meta_path": "mock/input/case_001/case_meta.json",
+  "shape_zyx": [
+    64,
+    128,
+    128
+  ],
+  "spacing_zyx_mm": [
+    1.0,
+    0.6,
+    0.6
+  ],
+  "preview_files": {
+    "debug_mid": "mock/output/case_001/input_preview/figs/debug/input_mid_slice.png",
+    "debug_grid": "mock/output/case_001/input_preview/figs/debug/input_slice_grid.png",
+    "report_mid": "mock/output/case_001/input_preview/figs/report/input_mid_slice.png",
+    "report_grid": "mock/output/case_001/input_preview/figs/report/input_slice_grid.png"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "case_002",
+  "method": "vessel-wise top-k mean on fused_score",
+  "k": 4,
+  "pred_14": {
+    "Left Infraclinoid Internal Carotid Artery": 0.7372124110252462,
+    "Right Infraclinoid Internal Carotid Artery": 0.0,
+    "Left Supraclinoid Internal Carotid Artery": 0.7611775409538206,
+    "Right Supraclinoid Internal Carotid Artery": 0.7480246351697027,
+    "Left Middle Cerebral Artery": 0.7339770159563355,
+    "Right Middle Cerebral Artery": 0.7385618924638404,
+    "Anterior Communicating Artery": 0.7629366433124439,
+    "Left Anterior Cerebral Artery": 0.7579064336981369,
+    "Right Anterior Cerebral Artery": 0.7304377602593087,
+    "Left Posterior Communicating Artery": 0.0,
+    "Right Posterior Communicating Artery": 0.7525572303990171,
+    "Basilar Tip": 0.7436643748241125,
+    "Other Posterior Circulation": 0.0,
+    "Aneurysm Present": 0.7629366433124439
+  }
+}

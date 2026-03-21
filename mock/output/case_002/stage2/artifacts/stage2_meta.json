@@ -1,0 +1,39 @@
+{
+  "stage": "stage2_candidates",
+  "case_id": "case_002",
+  "seed": 7,
+  "input": {
+    "vessel_prior_path": "mock/output/case_002/stage1/artifacts/vessel_prior.npy",
+    "stage1_meta_path": "mock/output/case_002/stage1/artifacts/stage1_meta.json"
+  },
+  "output": {
+    "candidates_path": "mock/output/case_002/stage2/artifacts/candidates.json",
+    "roi_patches_path": "mock/output/case_002/stage2/artifacts/roi_patches.npy"
+  },
+  "num_candidates_sampled": 180,
+  "num_candidates_kept": 48,
+  "patch_size": 24,
+  "distance_threshold_mm": 40.0,
+  "pseudo_lesion_centers_zyx": [
+    [
+      28,
+      44,
+      53
+    ],
+    [
+      39,
+      74,
+      87
+    ]
+  ],
+  "distance_stats_mm": {
+    "all_mean": 21.372474895084963,
+    "kept_mean": 20.865751360413533,
+    "all_min": 4.547526800360829,
+    "all_max": 39.93494710150497
+  },
+  "trick_mapping": {
+    "trick2_vessel_class_roi": "Each candidate includes vessel_class and class-wise statistics.",
+    "trick3_distance_aware_negative_sampling_sim": "Candidates filtered by distance to pseudo lesions for demonstration."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "stage3_roi_classifier",
+  "case_id": "case_002",
+  "seed": 7,
+  "input": {
+    "roi_patches_path": "mock/output/case_002/stage2/artifacts/roi_patches.npy",
+    "candidates_path": "mock/output/case_002/stage2/artifacts/candidates.json"
+  },
+  "output": {
+    "roi_scores_path": "mock/output/case_002/stage3/artifacts/roi_scores.json"
+  },
+  "num_roi": 48,
+  "num_slices_for_2p5d": 6,
+  "trick_mapping": {
+    "trick5_input_2p5d": "Used 6 slices for 2.5D scoring simulation."
+  }
+}

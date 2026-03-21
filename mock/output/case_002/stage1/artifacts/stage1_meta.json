@@ -1,0 +1,33 @@
+{
+  "stage": "stage1_preprocess",
+  "case_id": "case_002",
+  "seed": 7,
+  "input": {
+    "volume_path": "mock/input/case_002/volume.npy",
+    "case_meta_path": "mock/input/case_002/case_meta.json"
+  },
+  "output": {
+    "volume_norm_path": "mock/output/case_002/stage1/artifacts/volume_norm.npy",
+    "vessel_prior_path": "mock/output/case_002/stage1/artifacts/vessel_prior.npy"
+  },
+  "shape_zyx": [
+    64,
+    128,
+    128
+  ],
+  "spacing_zyx_mm": [
+    1.0,
+    0.6,
+    0.6
+  ],
+  "trick_mapping": {
+    "trick1_segmentation_to_detection": "Generated vessel prior to reduce search space for later stages."
+  },
+  "normalization": {
+    "clip_lower": -0.3082951754331589,
+    "clip_upper": 0.7977584898471832,
+    "zscore_mean": 0.3868626058101654,
+    "zscore_std": 0.18249693675136566,
+    "valid_voxel_count": 681574
+  }
+}
