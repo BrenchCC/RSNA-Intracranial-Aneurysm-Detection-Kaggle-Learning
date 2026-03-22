@@ -115,13 +115,12 @@ class Eric3DInferenceDataset(Dataset):
         return len(self.patch_files)
 
     def __getitem__(self, idx):
-        h5_path = self.patch_files[idx]
-        series_uid = h5_path.stem
+        patch_path = self.patch_files[idx]
+        series_uid = patch_path.stem
 
-        # Load patch
-        with h5py.File(h5_path, 'r') as f:
-            g = f[f'patches_{self.patch_size}']
-            patch = np.array(g['data'][0], dtype=np.float32)  # (D, H, W)
+        # Load patch from NPZ
+        data = np.load(patch_path)
+        patch = data['patch'].astype(np.float32)  # (D, H, W)
 
         # Add channel dimension
         patch = patch[np.newaxis, ...]  # (1, D, H, W)

@@ -141,14 +141,12 @@ class Eric3DDataset(Dataset):
         return len(self.patch_files)
 
     def __getitem__(self, idx):
-        h5_path = self.patch_files[idx]
-        series_uid = h5_path.stem
+        patch_path = self.patch_files[idx]
+        series_uid = patch_path.stem
 
-        # Load patch
-        with h5py.File(h5_path, 'r') as f:
-            g = f[f'patches_{self.patch_size}']
-            # Take first patch (for now - could sample random patch if multiple)
-            patch = np.array(g['data'][0], dtype=np.float32)  # (64, 64, 64)
+        # Load patch from NPZ
+        data = np.load(patch_path)
+        patch = data['patch'].astype(np.float32)  # (64, 64, 64)
 
         # Apply augmentation
         if self.augmentation:
@@ -1521,7 +1519,7 @@ def main():
 
     # Get patch files
     data_dir = Path(args.data_dir)
-    all_patches = list(data_dir.glob("*.h5"))
+    all_patches = list(data_dir.glob("*.npz"))
 
     # Split into train/val
     uid_to_patch = {p.stem: p for p in all_patches}
